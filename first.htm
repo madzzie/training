@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>
+			:: My Page ::
+		</title>
+
+		<style>
+			body 	{
+					background-color:white;
+					color:blue;			
+					font-size:14pt;
+				}
+
+			table   {
+				width : 50%;
+				border-collapse: collapse;
+				}
+			.onover {
+				color:red;
+				text-decoration:bold;
+				background-color:yellow;
+				cursor:hand;
+				}
+			.onout  {
+				color:blue;
+				text-decoration:none;
+				background-color:white;
+				}
+		</style>
+
+		<script>
+			function disp(t) {
+				alert('You Clicked on the '+t);
+			}
+		</script>
+	</head>
+
+	<body onClick=disp('Body')>
+		<marquee onClick=disp('Marquee') style='color:red;'>This is my first page</marquee>
+		This is the second line.
+
+	<table border=1 align=center bordercolor=#e0e0e0>
+		<tr onmousemove="this.className='onover'" onmouseout="this.className='onout'"><td>One</td></tr>
+		<tr onmousemove="this.className='onover'" onmouseout="this.className='onout'"><td>Two</td></tr>
+		<tr onmousemove="this.className='onover'" onmouseout="this.className='onout'"><td>Three</d></tr>
+		<tr onmousemove="this.className='onover'" onmouseout="this.className='onout'"><td>Four</td></tr>
+		<tr onmousemove="this.className='onover'" onmouseout="this.className='onout'"><td>Five</td></tr>
+	</table>
+
+	</body>
+</html>
